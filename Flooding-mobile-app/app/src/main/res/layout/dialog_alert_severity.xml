@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/photo_low_severity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/car_reference_small"/>
+
+        <TextView
+            android:id="@+id/dialog_severity_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="5dp"
+            android:text="Low severity: Water level is less than 6 inches / 15 cm . Which is about 1/4 of a car tire\nMedium severity: Water level is between 6 inches and 12 inches / 15 cm and 30 cm.\nHigh severity: Water level is greater than 12 inches/ 30 cm. Which is about half a car tire."
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

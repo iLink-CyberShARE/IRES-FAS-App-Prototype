@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/reports_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_reports"
+        android:title="@string/Reports"
+        app:showAsAction="ifRoom"/>
+
+    <!--item
+        android:id="@+id/create_item"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/ic_create_report_dark"
+        android:title="@string/Create"
+        app:showAsAction="ifRoom"/-->
+
+    <item
+        android:id="@+id/maps_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_maps"
+        android:title="@string/Map"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/weather_item"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/ic_sun"
+        android:title="@string/Weather"
+        app:showAsAction="ifRoom"/>
+</menu>

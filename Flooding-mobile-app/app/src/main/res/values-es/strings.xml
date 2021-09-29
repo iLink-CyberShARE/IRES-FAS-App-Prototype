@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sistema de Alerta de Inundaciones</string>
+
+    <string name="my_app_id">flood_alert_system-rfmlg</string>
+
+    <!--Navigation-->
+    <string name="Reports">Reportes</string>
+    <string name="Create">Crear</string>
+    <string name="Map">Mapa</string>
+    <string name="Weather">Clima</string>
+
+    <!--Report fragment-->
+    <string name="content_description">Reporte de Imagen</string>
+    <string name="Address">Dirección:</string>
+    <string name="Severity">Severidad:</string>
+    <string name="Date">Fecha:</string>
+
+    <string-array name="Severities">
+        <item name="Low">Baja</item>
+        <item name="Medium">Media</item>
+        <item name="High">Alta</item>
+    </string-array>
+
+    <!--User input fragment-->
+    <string name="Create_a_report">Crear Reporte</string>
+    <string name="Camera">Cámara</string>
+    <string name="Browse">Buscar</string>
+    <string name="Description">Descripción:</string>
+    <string name="Enter_a_description">Ingrese una descripción</string>
+    <string name="Submit">Enviar</string>
+
+    <!--Weather fragment-->
+    <string name="Rain_Forecast">Pronóstico del Clima</string>
+    <string name="Min">Mín:</string>
+    <string name="Max">Máx:</string>
+
+    <!--Settings fragment-->
+    <string name="settings">Configuración General</string>
+    <string name="pref_languages">Idioma</string>
+    <string name="pref_languages_summary">Selecciona tu idioma</string>
+    <string-array name="languagesTag">
+        <item name="english">Inglés</item>
+        <item name="spanish">Español</item>
+    </string-array>
+    <string-array name="languagesValues">
+        <item name="english">English</item>
+        <item name="spanish">español</item>
+    </string-array>
+
+    <string name="general">General</string>
+    <string name="pref_darkTheme">Tema oscuro</string>
+    <string name="pref_darkTheme_summary">Aplicar el tema oscuro a la app</string>
+
+    <string name="reports">Reports</string>
+    <string name="pref_limit">Número de reportes</string>
+    <string name="pref_limit_summary">Selecciona el número de reportes a descargar</string>
+    <string-array name="limitTag">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+    </string-array>
+    <string-array name="limitValues">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+    </string-array>
+
+    <string name="pref_images">Descargar imágenes</string>
+    <string name="pref_images_summary">Descargar imágenes de reportes</string>
+
+    <string name="weather">Weather</string>
+    <string name="pref_units">Unidades</string>
+    <string name="pref_units_summary">Selecciona tus unidades preferidas</string>
+    <string-array name="unitsTag">
+        <item name="imperial">Imperial</item>
+        <item name="metric">Métrico</item>
+    </string-array>
+    <string-array name="unitsValues">
+        <item name="imperial">imperial</item>
+        <item name="metric">metrico</item>
+    </string-array>
+
+    <!--Alert Dialog-->
+    <string name="understood">Entendido</string>
+    <string name="camera_dialog_title">Selecciona una imagen</string>
+    <string name="severity_dialog_title">Severidad de la Inundación</string>
+    <string name="description_dialog_title">Escribe una descripción</string>
+    <string name="required">[Requerido]</string>
+    <string name="optional">[Opcional]</string>
+    <string name="dialog_camera_text_1"> Toma una foto usando la cámara de tu dispositivo móvil.</string>
+    <string name="dialog_camera_text_2"> Selecciona una imagen almacenada en tu dispositivo navegando a través del administrador del archivos.</string>
+    <string name="dialog_severity_text_1"> Severidad baja: El nivel del agua es menor a 20 cm. </string>
+    <string name="dialog_severity_text_2"> Severidad media: El nivel del agua está entre 20 cm y 50 cm.</string>
+    <string name="dialog_severity_text_3"> Severidad alta: El nivel del agua es mayor a 50 cm.  </string>
+    <string name="dialog_description_text_1"> Escriba una descripción corta acerca de la inundación. </string>
+
+    <!--login window-->
+    <string name="create_account"><u>Crear Cuenta</u></string>
+    <string name="student_Id">ID Probador Beta</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="name">Nombre</string>
+    <string name="sId_msg">Debe ingresar un ID</string>
+    <string name="email_msg">Debe ingresar un correo electrónico</string>
+    <string name="name_msg">Debe ingresar un nombre</string>
+    <string name="password_msg">Debe ingresar una contraseña</string>
+    <string name="registration_title">Registrate</string>
+    <string name="registration_description">Por favor rellena todos los campos</string>
+    <string name="registration_negative">Cancelar</string>
+    <string name="registration_positive">Registrar</string>
+    <string name="registration_success">Registración exitosa</string>
+    <string name="registration_unsuccess">Este ID ya existe</string>
+    <string name="login_student">Este ID no existe</string>
+    <string name="login_denied">Permiso de accesso denegado</string>
+    <string name="login_pending">Permiso de acceso pendiente</string>
+    <string name="login_success">¡Bienvenido!</string>
+</resources>
+
+    <!--ü, é, á, í, ó, ú, ñ, Ñ, ¿, ¡ -->

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Flood Alert System</string>
+
+    <string name="my_app_id">flood_alert_system-rfmlg</string>
+
+    <!--Navigation-->
+    <string name="Reports">Reports</string>
+    <string name="Create">Create</string>
+    <string name="Map">Map</string>
+    <string name="Weather">Weather</string>
+
+    <!--Report fragment-->
+    <string name="content_description">Report Imagen</string>
+    <string name="Address">Address:</string>
+    <string name="Severity">Severity:</string>
+    <string name="Date">Date:</string>
+
+    <string-array name="Severities">
+        <item name="Low">Low</item>
+        <item name="Medium">Medium</item>
+        <item name="High">High</item>
+    </string-array>
+
+    <!--User input fragment-->
+    <string name="Create_a_report">Create a Report</string>
+    <string name="Camera">Camera</string>
+    <string name="Browse">Browse</string>
+    <string name="Description">Description:</string>
+    <string name="Enter_a_description">Enter a description</string>
+    <string name="Submit">Submit</string>
+
+    <!--Weather fragment-->
+    <string name="Rain_Forecast">Weather Forecast</string>
+    <string name="Min">Min:</string>
+    <string name="Max">Max:</string>
+
+    <!--Settings fragment-->
+    <string name="settings">General Settings</string>
+    <string name="pref_languages">Language</string>
+    <string name="pref_languages_summary">Select your language</string>
+    <string-array name="languagesTag">
+        <item name="english">English</item>
+        <item name="spanish">Spanish</item>
+    </string-array>
+    <string-array name="languagesValues">
+        <item name="english">English</item>
+        <item name="spanish">español</item>
+    </string-array>
+
+    <string name="general">General</string>
+    <string name="pref_darkTheme">Dark theme</string>
+    <string name="pref_darkTheme_summary">Apply dark theme to the app</string>
+
+    <string name="reports">Reports</string>
+    <string name="pref_limit">Number of reports</string>
+    <string name="pref_limit_summary">Select number of reports to download</string>
+    <string-array name="limitTag">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+    </string-array>
+    <string-array name="limitValues">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+    </string-array>
+
+    <string name="pref_images">Download images</string>
+    <string name="pref_images_summary">Download report images</string>
+
+    <string name="weather">Weather</string>
+    <string name="pref_units">Units</string>
+    <string name="pref_units_summary">Select your preferred units</string>
+    <string-array name="unitsTag">
+        <item name="imperial">Imperial</item>
+        <item name="metric">Metric</item>
+    </string-array>
+    <string-array name="unitsValues">
+        <item name="imperial">imperial</item>
+        <item name="metric">metric</item>
+    </string-array>
+
+
+    <!--Alert Dialog-->
+    <string name="understood">Understood</string>
+    <string name="camera_dialog_title">Select an image</string>
+    <string name="severity_dialog_title">Flooding severity</string>
+    <string name="required">[Required]</string>
+    <string name="optional">[Optional]</string>
+    <string name="description_dialog_title">Write a description</string>
+    <string name="dialog_camera_text_1"> Take a picture using your device\'s camera.</string>
+    <string name="dialog_camera_text_2"> Select an image stored in your device by navigating through the file manager.</string>
+    <string name="dialog_severity_text_1"> Low severity: Water level is less than 6 inches / 15 cm . Which is about 1/4 of a car tire </string>
+    <string name="dialog_severity_text_2"> Medium severity: Water level is between 6 inches and 12 inches / 15 cm and 30 cm. </string>
+    <string name="dialog_severity_text_3"> High severity: Water level is greater than 12 inches/ 30 cm. Which is about half a car tire </string>
+    <string name="dialog_description_text_1"> Write a short description of the flooding event. </string>
+
+    <!--login window-->
+    <string name="create_account"><u>Create Account</u></string>
+    <string name="student_Id">Beta Tester ID</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="sId_msg">ID cannot be empty</string>
+    <string name="email_msg">Email cannot be empty</string>
+    <string name="name_msg">Name cannot be empty</string>
+    <string name="password_msg">Password cannot be empty</string>
+    <string name="registration_title">Sign Up</string>
+    <string name="registration_description">Please fill all fields</string>
+    <string name="registration_negative">Cancel</string>
+    <string name="registration_positive">Register</string>
+    <string name="registration_success">Registration success</string>
+    <string name="registration_unsuccess">ID already exist</string>
+    <string name="login_student">ID do not exist</string>
+    <string name="login_denied">Permission to login is denied</string>
+    <string name="login_pending">Permission to login is pending</string>
+    <string name="login_success">Welcome!</string>
+    <string name="about">copyright 2018-2021, IRES: U.S.-Mexico Interdisciplinary Research Collaboration for Smart Cities investigators and contributing participants. Licensed under the GNU General Public License v3.0. This material is based upon work supported by the National Science Foundation (NSF) Award #1658733 IRES: US-Mexico Interdisciplinary Collaboration for Smart Cities.</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="report_details" translatable="false">Report Details</string>
+    <string name="Create_Feedback" tools:ignore="MissingTranslation">Create Feedback</string>
+    <string name="Credibility" tools:ignore="MissingTranslation">Credibility</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="dialog_credibility_1" translatable="false"> The report is completely inaccurate and completely disagree with it </string>
+    <string name="dialog_credibility_2" translatable="false"> The report does not reflect the current situation and disagree somewhat to it </string>
+    <string name="dialog_credibility_3" translatable="false"> The report is accurate but not really descriptive, im neutral to it</string>
+    <string name="dialog_credibility_4" translatable="false"> The report is well defined and accurate and agree with it</string>
+    <string name="dialog_credibility_5" translatable="false"> The report describes to its best the current situation and strongly agree with it </string>
+
+    <string name="credibility_dialog_title" translatable="false">Credibility value</string>
+    <string name="lifespan">"lifespan: "</string>
+
+
+</resources>

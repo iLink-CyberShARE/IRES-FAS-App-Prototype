@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/reports" >
+        <ListPreference
+            android:key="prefLimit"
+            android:title="@string/pref_limit"
+            android:summary="@string/pref_limit_summary"
+            android:entries="@array/limitTag"
+            android:entryValues="@array/limitValues" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="prefImages"
+            android:title="@string/pref_images"
+            android:summary="@string/pref_images_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/weather" >
+        <ListPreference
+            android:key="prefUnits"
+            android:title="@string/pref_units"
+            android:summary="@string/pref_units_summary"
+            android:entries="@array/unitsTag"
+            android:entryValues="@array/unitsValues" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

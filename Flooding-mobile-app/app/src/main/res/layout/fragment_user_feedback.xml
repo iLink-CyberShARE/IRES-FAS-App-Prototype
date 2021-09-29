@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".GUI.UserFeedbackFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Create_Feedback"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:id="@+id/report"/>
+
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/placeholder_image"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:gravity="center"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/picture_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_camera"
+                android:text="@string/Camera" />
+
+            <Button
+                android:id="@+id/browse_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_folder"
+                android:text="@string/Browse" />
+
+            <ImageView
+                android:id="@+id/infoCamera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/ic_info"/>
+
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:columnCount="3"
+            android:gravity="center"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/severity_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/Severity" />
+
+            <!--Spinner
+                android:id="@+id/emergency_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/severities"
+                android:prompt="@string/emergency_prompt" /-->
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressTint="@color/colorPrimary"
+                android:rating="1"
+                android:stepSize="1"
+                android:numStars="3"/>
+
+            <ImageView
+                android:id="@+id/infoSeverity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/ic_info"/>
+
+            <!--added for credibility/-->
+            <TextView
+                android:id="@+id/credibility_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Credibility"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/MyCredibilityBar"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/colorPrimary"
+                android:rating="1"
+                android:stepSize="1" />
+            <ImageView
+                android:id="@+id/infoCreditablity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/ic_info"/>
+
+            <TextView
+                android:id="@+id/description_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Description"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ems="10"
+                android:hint="@string/Enter_a_description" />
+
+            <ImageView
+                android:id="@+id/infoDescription"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/ic_info"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
+        <!-- Also, we need to tell the mobile browser to disable unwanted scaling of the page and
+        set it to its actual size by placing the following line in the head section or our HTML page:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- Include Leaflet CSS file in the head section of your document:-->
+        <link rel="stylesheet" href="<%=ip_address%>leaflet/dist/leaflet.css" />
+        <script src="<%=ip_address%>leaflet/dist/leaflet.js"></script>
+        <!--script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"/>
+
+        <!--Animations-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"/>
+
+        <link rel="stylesheet" href="<%=ip_address%>@fortawesome/fontawesome-free/css/all.css">
+        <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+        <!--link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/-->
+        <!-- To make our map div element stretch to all available space (fullscreen), we can use the following CSS code-->
+        <link rel="stylesheet" href="<%=ip_address%>stylesheets/map_style.css">
+        <link rel="stylesheet" href="<%=ip_address%>stylesheets/modal_style_2.css">
+
+        <title>Flood Alert System</title>
+
+        <!-- Load d3.js -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+
+    </head>
+    <body>
+
+        <div id="map"></div>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="id01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center align-middle">
+                        <h2 class="modal-title font-weight-bold" id="modalTitle"></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="close">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="plot"></div>
+                        <div id="singleReport">
+                            <img id="image" class="img-rounded" alt="Report Image" src = "" title="Report Image"/>
+                            <!-- Create a div where the graph will take place -->
+                            <h3 id="severityTitle"> Severity: </h3>
+                            <h4 id="severityValue"></h4>
+                            <h3 id="dateTitle"> Date: </h3>
+                            <h4 id="dateValue"></h4>
+                            <!-- Added button for feedback -->
+                            <button type="button" class="feedback" aria-label="Give Feedback"></button>
+                            <!--  -->
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="<%=ip_address%>javascripts/leaflet-heat.js"></script>
+        <script src="<%=ip_address%>javascripts/display_map.js" id="map-script" lat=<%=lat%> lon=<%=lon%> ip_address =<%=ip_address%>></script>
+
+        <script src="<%=ip_address%>javascripts/connected_scatter_plot.js"></script>
+    </body>
+</html>

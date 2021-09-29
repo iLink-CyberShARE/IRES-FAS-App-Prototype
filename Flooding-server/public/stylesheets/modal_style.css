@@ -1,0 +1,81 @@
+/**
+ * @author  IRES: U.S.-Mexico Interdisciplinary Research Collaboration for
+ * Smart Cities investigators and contributing participants.
+ */
+
+/* The Modal (background) */
+.modal-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    /*background-color: #474e5d;*/
+    background-color: var(--background);
+    padding: 50px 0 50px 0;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    font-size: 87.5%;
+    margin: auto auto auto auto; /* 5% from the top, 15% from the bottom and centered */
+    padding: 10%;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:auto;
+}
+
+.feedback{
+    position: center;
+    font-size: 400%;
+    font-weight: bold;
+    color: black;
+}
+
+.feedback:hover,
+.feedback:focus{
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* The Close Button (x) */
+span.close {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 400%;
+    font-weight: bold;
+    /*color: #f1f1f1;*/
+    color:black;
+}
+
+span.close:hover,
+span.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+#image{
+    height:auto;
+    width:80%;
+}
+
+.col{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.row{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
